@@ -1,0 +1,51 @@
+* {margin: 0; padding: 0; border: 0;}
+
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {color: #000; text-align: left; font: 16px sans-serif;}
+
+#outer {margin: 5px 10px;}
+
+h1, h2, h3, p, ul, hr, table {margin-top: 10px;}
+
+h1 {font-size: 30px;}
+h2 {font-size: 24px; font-weight: normal;}
+h3 {font-size: 20px; font-weight: normal;}
+
+h2 {margin: 20px 0;}
+
+a {color: #005EC8;}
+a:hover {color: #003A7A;}
+
+input, textarea, select, button {border: 1px solid #000; width: 100%; font: 16px sans-serif; box-sizing: border-box;}
+input[type="url"], input[type="text"], input[type="password"], textarea {padding: 3px;}
+input[type="submit"], input[type="reset"], input[type="button"], button {padding: 5px 15px; background-color: #F1EFEB; color: #000; width: auto;}
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover {background-color: #E6E3DE;}
+
+input[type="submit"]:disabled, input[type="reset"]:disabled, input[type="button"]:disabled, button:disabled {color: #888; background-color: #F1EFEB;}
+
+.input-prefix {display: flex; flex-flow: row; border: 1px solid #000; width: 100%;}
+.input-prefix span {background-color: #F1EFEB; color: #555; display: block; padding: 3px;}
+.input-prefix input {border: 0; flex: 1 0 auto; width: auto;}
+
+.input-fake {border: 1px solid #000; background-color: #F1EFEB; color: #555; padding: 3px; display: inline-block;}
+.input-small {padding: 3px 10px;}
+
+.delete {width: 100%; padding: 2px;}
+.input {margin-top: 2px;}
+
+table {border-collapse: collapse; width: 100%;}
+td, th {vertical-align: middle; padding: 5px;}
+
+.page-list {width: auto;}
+.page-list td, .page-list th {border: 1px solid #000;}
+
+.page-list .delete-col {text-align: center;}
+
+.flexv {display: flex; flex-flow: column;}
+.flexh {display: flex; flex-flow: row;}
+.flex {flex: 1 0 auto;}
+
+
+.input-link {min-width: 300px; margin-right: 3px;}

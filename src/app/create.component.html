@@ -1,0 +1,38 @@
+<h2>Create page</h2>
+<div [ngSwitch]="section">
+  <div *ngSwitchCase="'mimic'">
+    <form [formGroup]="mimicForm" (ngSubmit)="submitMimic()">
+      <p>Enter a URL to mimic:</p>
+      <p class="input"><input type="text" [formControl]="mimicForm.controls['pretend']"></p>
+      <p><button type="submit"  [disabled]="!mimicForm.valid && mimicSubmitted">Next</button>
+      <p>{{message}}</p>
+    </form>
+  </div>
+  <div *ngSwitchCase="'link'">
+    <form [formGroup]="linkForm" (ngSubmit)="submitLink()">
+      <p>Mimicking: <a [href]="page.pretend">{{page.pretend}}</a></p>
+      <p>Create a link:</p>
+      <div class="input input-prefix">
+        <span>http://galible.com/</span>
+        <input type="text" [formControl]="linkForm.controls['name']">
+      </div>
+      <p>
+        <button type="submit"  [disabled]="!linkForm.valid && linkSubmitted">Create</button>
+        <button type="button" (click)="mimic()">Back</button>
+      </p>
+      <p>{{message}}</p>
+    </form>
+  </div>
+  <div *ngSwitchCase="'done'">
+    <p>Here's your link:</p>
+    <p class="input">
+      <span class="input-fake input-link">{{page.url}}</span>
+      <button class="input-small" ngxClipboard [cbContent]="page.url" (cbOnSuccess)="copyText = 'Copied'">{{copyText}}</button>
+    </p>
+    <p>
+      <button (click)="mimicNew()">Create New</button>
+  </div>
+  <div *ngSwitchDefault>
+    what happened
+  </div>
+</div>

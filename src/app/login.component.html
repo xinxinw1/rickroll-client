@@ -1,0 +1,9 @@
+<h2>Login</h2>
+<p>Username:</p>
+<p class="input"><input type="text" [(ngModel)]="model.username"></p>
+<p>Password:</p>
+<p class="input"><input type="text" [(ngModel)]="model.password"></p>
+<p>
+  <input type="submit" (click)="login()" value="Login">
+</p>
+<p>{{message}}</p>
