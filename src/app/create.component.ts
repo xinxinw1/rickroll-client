@@ -4,11 +4,7 @@ import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 
 import { PageService } from './page.service';
-import { LocalPageService } from './localpage.service';
 import { MessageService } from './message.service';
-import { AuthService } from './auth.service';
-
-import { Page } from './page';
 
 import { NGValidators } from 'ng-validators';
 
@@ -29,9 +25,7 @@ export class CreateComponent implements OnInit {
   constructor(
     private router: Router,
     private pageService: PageService,
-    private localPageService: LocalPageService,
     private messageService: MessageService,
-    private authService: AuthService,
     private location: Location,
     private fb: FormBuilder
   ) {}
