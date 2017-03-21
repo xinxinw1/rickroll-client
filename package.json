@@ -8,25 +8,16 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "@angular/common": "^2.4.1",
-    "@angular/compiler": "^2.4.1",
-    "@angular/core": "^2.4.1",
-    "@angular/forms": "^2.4.1",
-    "@angular/http": "^2.4.1",
-    "@angular/platform-browser": "^2.4.1",
-    "@angular/platform-browser-dynamic": "^2.4.1",
-    "@angular/router": "^3.4.1",
-    "@types/body-parser": "0.0.33",
-    "@types/express": "^4.0.32",
-    "@types/node": "^6.0.48",
-    "angular-cli": "1.0.0-beta.24",
-    "ng-validators": "^0.2.0",
-    "ngx-clipboard": "^3.0.1",
-    "rxjs": "^5.0.2",
-    "zone.js": "0.7.4",
-    "normalize-url": "^1.8.0",
-    "typescript": "~2.0.10"
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.1",
+    "protractor": "^4.0.9"
   },
   "repository": {}
 }

@@ -1,9 +1,11 @@
+<md-sidenav-container>
 <h2>Create page</h2>
 <div [ngSwitch]="section">
   <div *ngSwitchCase="'mimic'">
     <form [formGroup]="mimicForm" (ngSubmit)="submitMimic()">
-      <p>Enter a URL to mimic:</p>
-      <p class="input"><input type="text" [formControl]="mimicForm.controls['pretend']"></p>
+      <md-input-container>
+        <input mdInput placeholder="Enter a URL to mimic" value="example.com" [formControl]="mimicForm.controls['pretend']">
+      </md-input-container>
       <p><button type="submit"  [disabled]="!mimicForm.valid && mimicSubmitted">Next</button>
       <p>{{message}}</p>
     </form>
@@ -36,3 +38,4 @@
     what happened
   </div>
 </div>
+</md-sidenav-container>
